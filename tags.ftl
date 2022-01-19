@@ -1,6 +1,6 @@
 <#include "module/macro.ftl">
-<@layout title="标签列表 - ${blog_title!}">
-    <h1>标签列表</h1>
+<@layout title="Tags - ${blog_title!}">
+    <h1>Tags</h1>
     <ul>
         <@tagTag method="list">
             <#if tags?? && tags?size gt 0>

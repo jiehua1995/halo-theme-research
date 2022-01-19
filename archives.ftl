@@ -1,6 +1,6 @@
 <#include "module/macro.ftl">
-<@layout title="归档 - ${blog_title!}">
-    <h1>归档</h1>
+<@layout title="Archive - ${blog_title!}">
+    <h1>Archive</h1>
     <ul>
         <#list archives as archive>
             <h2>${archive.year?c}</h2>
@@ -12,7 +12,7 @@
         </#list>
     </ul>
 
-    <h1>分页</h1>
+    <h1>·</h1>
 
     <#if posts.totalPages gt 1>
         <ul>
@@ -20,29 +20,29 @@
                 <#if pagination.hasPrev>
                     <li>
                         <a href="${pagination.prevPageFullPath!}">
-                            上一页
+                            Pre
                         </a>
                     </li>
                 </#if>
                 <#list pagination.rainbowPages as number>
                     <li>
                         <#if number.isCurrent>
-                            <span class="current">第 ${number.page!} 页</span>
+                            <span class="current">Page${number.page!}</span>
                         <#else>
-                            <a href="${number.fullPath!}">第 ${number.page!} 页</a>
+                            <a href="${number.fullPath!}">Page${number.page!}</a>
                         </#if>
                     </li>
                 </#list>
                 <#if pagination.hasNext>
                     <li>
                         <a href="${pagination.nextPageFullPath!}">
-                            下一页
+                            Next
                         </a>
                     </li>
                 </#if>
             </@paginationTag>
         </ul>
     <#else>
-        <span>当前只有一页</span>
+        <span>ONLY ONE PAGE</span>
     </#if>
 </@layout>
