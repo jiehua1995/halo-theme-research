@@ -14,7 +14,7 @@
             <div class="items-stretch hidden lg:flex">
                 <#list menus?sort_by('priority') as menu>
                 <li>
-                <a href="${menu.url}" target="${menu.target!}" class="btn btn-ghost btn-sm rounded-btn>${menu.name} </a>
+                <a href="${menu.url}" target="${menu.target!}" class="btn btn-ghost btn-sm rounded-btn">${menu.name} </a>
                 </li>
                 </#list>
             </div>
