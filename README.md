@@ -11,3 +11,6 @@ Halo is a good platform to build our blogs. However, there is only a little them
 ## Installation
 
 Follow the instrucments of [Halo Doc](https://docs.halo.run/)
+
+## About
+![Alt](https://repobeats.axiom.co/api/embed/21aa4047a6258b5941a382392f71a75c3c5be84f.svg "Repobeats analytics image")
