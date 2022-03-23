@@ -3,7 +3,7 @@
         ?sort_by('priority')：根据菜单的排序编号排序
     -->
 
-    <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+    <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
         <div class="flex-none px-2 mx-2">
         <span class="text-lg font-bold">
             ${blog_title!}
