@@ -1,10 +1,11 @@
 <#macro layout title>
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="${meta_keywords!}"/>
     <meta name="description" content="${meta_description!}" />
+    <meta name="author" contents=${meta_author!}" />
 
     <#--
         公共 head 代码，详情请参考：https://docs.halo.run/zh/developer-guide/theme/public-template-tag
@@ -12,17 +13,20 @@
     -->
 
     <#--  引入daysyui和tailwindcss，以定义相关格式  -->
+    <#--  需要替换为最终版本，待开发完毕后 -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@1.24.3/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 
 
-    
-
     <@global.head />
 
     <title>${title}</title>
+
+
+
 </head>
 <body>
+
 <#include "menu.ftl">
 
 <#nested >
@@ -32,7 +36,11 @@
     包含：统计代码，底部信息
 -->
 <@global.footer />
+
+
 </body>
 </html>
+
+
 </#macro>
 
